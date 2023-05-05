@@ -7,8 +7,7 @@ body {
 }
 .container {
    display: flex;
-   padding: 15px;
-   
+   padding: 10px;  
 }
 
 nav {
@@ -25,19 +24,73 @@ img {
 }
 
 .welcome {
+    display:block;
     text-align: center;
-    padding: 150px;
+    padding: 70px;
 }
 
-.btn-choice {
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    align-content: center;
+.welcome-jark {
+    font-size: 100px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    text-align: center;
+
+}
+
+.btn-choice, .btn-choice-content {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 4rem;
+}
+
+.btn-login {
+    display:flex;
+
+}
+
+
+.text-area {
+    font-size: 70px;
+    padding: 8rem;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 5rem;
 }
 
+.topics {
+    text-align: center;
+
+}
+
+#exampleModalLabel, .modal-body {
+   color: black;
+}
+
+.signup {
+    display: grid;
+    justify-content: center;
+    color: black;
+    
+}
+
+#form-content {
+    
+}
+
+.form-floating {
+    width: 10%;
+
+}
+
+#signup-form {
+    display: grid;
+    justify-content: center;
+    
+}
+
+.form-control {
+    width: 30rem;
+}
