@@ -1,3 +1,4 @@
+
 body {
     background-color: #3e7cf9;
     color: white;
@@ -18,7 +19,7 @@ nav {
 .logo {
     float: left;
 }
-img {
+.img-logo {
     width: 20rem;    
     max-height: 100%;   
 }
@@ -48,7 +49,6 @@ img {
     display:flex;
 
 }
-
 
 .text-area {
     font-size: 70px;
@@ -82,6 +82,37 @@ footer {
     
 }
 
+.form-label {
+    width: 80rem;
+    justify-items: center;
+}
+
 .form-control {
     width: 100%;
+}
+
+.text-area-content {
+    margin-left: 5rem;
+    margin-right: 5rem; 
+    font-size: 25px;
+    padding: 3rem;
+    text-align: justify;
+}
+
+.informative-list {
+    display: grid;
+    margin-left: 8rem;
+    padding-bottom: 3rem;
+    font-size: 20px;
+}
+
+.example-image {
+    text-align: center;
+}
+
+.option-list-role {
+    display: grid;
+    margin-left: 8rem;
+    padding-bottom: 3rem;
+    font-size: 20px;
 }
