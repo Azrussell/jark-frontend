@@ -1,3 +1,4 @@
+
 body {
     background-color: #3e7cf9;
     color: white;
@@ -7,8 +8,7 @@ body {
 }
 .container {
    display: flex;
-   padding: 15px;
-   
+   padding: 10px;  
 }
 
 nav {
@@ -19,28 +19,105 @@ nav {
 .logo {
     float: left;
 }
-img {
+.img-logo {
     width: 20rem;    
     max-height: 100%;   
 }
 
-.welcome {
-    text-align: center;
-    padding: 150px;
+.img-meme {
+    width: 28rem;
 }
 
-.btn-choice {
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    align-content: center;
+.welcome {
+    display:block;
+    text-align: center;
+    padding: 70px;
+}
+
+.welcome-jark {
+    font-size: 100px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    text-align: center;
+
+}
+
+.btn-choice, .btn-choice-content {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 4rem;
+}
+
+.btn-login {
+    display:flex;
+
+}
+
+.text-area {
+    font-size: 70px;
+    padding: 8rem;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 5rem;
 }
 
-.bullets {
-    background-color: #3e7cf9;
+.topics {
+    text-align: center;
+
 }
+
+#exampleModalLabel, .modal-body {
+   color: black;
+}
+
+.signup {
+    justify-self: auto;
+    justify-content: center;
+    color: black;
+}
+
+
+#signup-form {
+    display: grid;
+    justify-content: center;
+    
+}
+
+.form-label {
+    width: 80rem;
+    justify-items: center;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.text-area-content {
+    margin-left: 5rem;
+    margin-right: 5rem; 
+    font-size: 25px;
+    padding: 3rem;
+    text-align: justify;
+}
+
+.informative-list {
+    display: grid;
+    margin-left: 8rem;
+    padding-bottom: 3rem;
+    font-size: 20px;
+}
+
+.example-image {
+    text-align: center;
+}
+
+.option-list-role {
+    display: grid;
+    margin-left: 8rem;
+    padding-bottom: 3rem;
+    font-size: 20px;
+}
+

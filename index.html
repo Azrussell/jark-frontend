@@ -1,46 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
 
-    <title>Jark-GPT</title>
-  </head>
-  <body>
-    <header>
 
-      <div class="container-menu">
-          <img src="/images/jarkgpt-high-resolution-color-logo (1).png" alt="logo">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>JarkGPT</title>
+</head>
 
-          <nav>
-            <div id="btn-login">
-              <button>Sign Up</button>
-              <button>Log In</button>
+<body>
+  <header>
+    <div class="container-menu">
+      <img src="/images/jarkgpt-high-resolution-color-logo (1).png" alt="logo" class="img-logo">
+      <nav class="grid-btn">
+        <div id="btn-login">
+          <button class="btn btn-light btn-lg" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Log In</button>
+
+          <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Log In</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
             </div>
-          </nav>
-      </div> 
+            <div class="offcanvas-body">
+              <div class="signup">
+                <p>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div><br>
+                <div>
+                  <a href="/choice.html">
+                    <button type="button" class="btn btn-light btn-lg">Log In</button>
+                  </a>
+                  </p>
+                </div>
 
-    </header>
+              </div>
+            </div>
+          </div>
+          <a href="/signup.html"><button type="button" class="btn btn-light btn-lg">Sign Up</button></a>
+      </nav>
+    </div>
+  </header>
+  <div class="container-content">
     <section class="welcome">
-        <div>
-            <h1>Jark-GPT</h1>
-        </div>
-        <div>
-            <h2>Hello...</h2>
-            <h3>Do you want to level up your GPT skills?</h3>
-        </div>
+      <div>
+        <h1 class="welcome-jark">JarkGPT</h1>
+      </div>
+      <div>
+        <h2>Hello...</h2>
+        <h3>Do you want to level up your GPT skills?</h3>
+      </div>
     </section>
-    <div class="btn-choice">
-        <div class="btn-choices">
-          <button>Yes</button>
-          <button>No</button>
+  </div>
+  <div class="btn-choice">
+    <div class="btn-choices">
+      <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        <button class="btn btn-light btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Yes, please!</button></a>
+      <!-- Button trigger modal -->
+
+      <button type="button" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Not now
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Oh nooo!</h1>
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="/images/meme.png" alt="meme" class="img-meme">
+            </div>
+            <div class="modal-footer">
+              <a href="http://chat.openai.com/"><button type="button" class="btn btn-light btn-lg"
+                  data-bs-dismiss="modal">Close</button></a>
+            </div>
+          </div>
         </div>
       </div>
-    <footer>
-        <span>&copy; 2023 Jark-GPT</span>
-    </footer>
-    <script src="index.js"></script>
-  </body>
+    </div>
+  </div>
+  <footer>
+    <span>&copy; 2023 JarkGPT</span>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
 </html>
