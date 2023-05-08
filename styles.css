@@ -24,6 +24,10 @@ nav {
     max-height: 100%;   
 }
 
+.img-meme {
+    width: 28rem;
+}
+
 .welcome {
     display:block;
     text-align: center;
