@@ -11,7 +11,7 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
-  <title>Sign Up JarkGPT</title>
+  <title>Quiz</title>
 </head>
 
 <body>
@@ -28,45 +28,56 @@
 
   <body>
 
-    <form id="quizForm">
-      <h2>Question 1:</h2>
-      <p>You are preparing for a job interview. What prompt would you ask JarkGPT to best prepare you for the interview?
+    <form class="quiz-area-content" id="quizForm">
+      <p class="questions">Question 1: You are preparing for a job interview. What prompt would you ask JarkGPT to best
+        prepare you for the interview?
       </p>
-      <input type="radio" name="question1"
-        value="I am interviewing for `X` position. Give me a list of possible interview questions that I might be asked by the interviewer, both technical and behavioral.">Questions
-      to ask the interviewer?<br>
-      <input type="radio" name="question1"
-        value="I want you to act as an interviewer. I will be the candidate and you will ask me the interview questions for the `X` position. I want you to only reply as the interviewer. Do not write all the conservation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. My first sentence is "
-        Hi"">Act as an interviewer?<br>
-      <input type="radio" name="question1"
-        value="How can I effectively highlight my skills and experiences during the interview for `X` position?">Highlight
-      skills?<br>
+      <div class="text-answer">
+        <input type="radio" name="question1"
+          value="I am interviewing for `X` position. Give me a list of possible interview questions that I might be asked by the interviewer, both technical and behavioral.">Questions
+        to ask the interviewer?<br>
+        <input type="radio" name="question1"
+          value="I want you to act as an interviewer. I will be the candidate and you will ask me the interview questions for the `X` position. I want you to only reply as the interviewer. Do not write all the conservation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. My first sentence is "
+          Hi"">Act as an interviewer?<br>
+        <input type="radio" name="question1"
+          value="How can I effectively highlight my skills and experiences during the interview for `X` position?">Highlight
+        skills?<br>
+      </div>
 
-      <h2>Question 2:</h2>
-      <p>You are a small business owner looking to optimize your finances. What prompt would you ask JarkGPT to best
+
+      <p class="questions">Question 2: You are a small business owner looking to optimize your finances. What prompt
+        would you ask JarkGPT to best
         improve your financials?</p>
-      <input type="radio" name="question2"
-        value="Create a financial plan for a small business that focuses on cost savings and long-term investments">Financial
-      plan?<br>
-      <input type="radio" name="question2"
-        value="I am a small business owner. How can I best go about optimizing my finances?">Ask how you optimize your
-      finances<br>
-      <input type="radio" name="question2" value="What are the best ways to de-escalate a difficult situation?">Escalate
-      my business<br>
+      <div class="text-answer">
+        <input type="radio" name="question2"
+          value="Create a financial plan for a small business that focuses on cost savings and long-term investments">Financial
+        plan?<br>
+        <input type="radio" name="question2"
+          value="I am a small business owner. How can I best go about optimizing my finances?">Ask how you optimize your
+        finances<br>
+        <input type="radio" name="question2"
+          value="What are the best ways to de-escalate a difficult situation?">Escalate
+        my business<br>
+      </div>
 
-      <h2>Question 3:</h2>
-      <p>You are working in a position where you are regularly required to exercise techniques of de-escalation. What
+      <p class="questions">Question 3: You are working in a position where you are regularly required to exercise
+        techniques of de-escalation. What
         prompt would you ask JarkGPT to learn more about best practices when doing so?</p>
-      <input type="radio" name="question3"
-        value="What techniques have the highest chance of success when attempting to de-escalate a difficult situation?">The
-      techniques of success<br>
-      <input type="radio" name="question3"
-        value="As a customer service representative, what are some effective techniques for de-escalating a difficult customer situation? Can you provide some examples of successful customer interactions that you have witnessed or participated in?">About
-      the customer interactions<br>
-      <input type="radio" name="question3" value="What are the best ways to de-escalate a difficult situation?">Best
-      ways to difficult situation?<br>
 
-      <input type="submit" value="Submit">
+      <div class="text-answer">
+        <input type="radio" name="question3"
+          value="What techniques have the highest chance of success when attempting to de-escalate a difficult situation?">The
+        techniques of success<br>
+        <input type="radio" name="question3"
+          value="As a customer service representative, what are some effective techniques for de-escalating a difficult customer situation? Can you provide some examples of successful customer interactions that you have witnessed or participated in?">About
+        the customer interactions<br>
+        <input type="radio" name="question3" value="What are the best ways to de-escalate a difficult situation?">Best
+        ways to difficult situation?<br>
+      </div>
+
+      <div class="submit-btn">
+        <input class="btn btn-light btn-lg" type="submit" value="Submit">
+      </div>
     </form>
 
     <div id="result"></div>

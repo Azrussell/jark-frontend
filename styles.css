@@ -123,8 +123,10 @@ footer {
 }
 
 #result {
-    margin-top: 20px;
-    font-weight: bold;
+    padding-left: 15rem;
+    padding-right: 8rem;
+    padding-bottom: 3rem;
+    font-size: 20px;
   }
 
 .quiz-area-content {
