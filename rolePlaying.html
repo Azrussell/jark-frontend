@@ -16,7 +16,7 @@
     <title>JarkGPT</title>
 </head>
 
-<body>
+<body class="body">
 
     <header>
         <div class="container-menu">
@@ -82,17 +82,20 @@
             </div>
         </div>
     </div><br>
-    <div class="option-list-role">
-        <ul>Select the prompt that best provides a role for JarkGPT to assume:
-            <li>OPTION 1 answer</li>
-            <li>OPTION 2 question</li>
-            <li>option 3 answer</li>
-        </ul>
+    <div class="option-list-role" id="option-role">
+        <h5>Which prompt best provides a role for JarkGPT to assume?</h5>
+      
+</div>
+<div id="question-field">
+    <button id="question1">Question</button>
+    
 
+</div>
+<div id="answer-field">
+    <button id="answer1">Answer</button>
+</div>
 
-        outputs answer ON SAME PAGE
-    </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

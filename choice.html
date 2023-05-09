@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Welcome to JarkGPT</title>
 </head>
-<body>
+<body id="body">
     <header>
         <div class="container-menu">
             <img src="/images/jarkgpt-high-resolution-color-logo (1).png" alt="logo" class="img-logo">
@@ -21,14 +21,14 @@
         </div> 
       </header>
     <section class="topics">
-        <h1 class="text-area">Click on the topic you are most interested in!</h1>
-        <div class="btn-choice-content">
-            <button type="button" class="btn btn-light btn-lg">Roles</button>
-            <button type="button" class="btn btn-light btn-lg">Context</button>
-            <button type="button" class="btn btn-light btn-lg">Examples</button>
+        <h4 class="text-area" height="20px">Click on the topic you are most interested in!</h4>
+        <div class="btn-choice-content" id="choice">
+            <button type="button" class="btn-roles" id="roles">Roles</button>
+            <button type="button" class="btn-context">Context</button>
+            <button type="button" class="btn-examples">Examples</button>
         </div>
 
     </section>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
