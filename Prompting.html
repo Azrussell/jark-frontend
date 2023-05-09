@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Prompt Engineering</title>
 </head>
+
 <body>
+    <header>
+        <div class="container-menu">
+            <img src="/images/jarkgpt-high-resolution-color-logo (1).png" alt="logo" class="img-logo">
+            <nav>
+                <div id="btn-login">
+                    <h3>Prompt Engineering</h3>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-    <h1><strong>Prompt Engineering</strong></h1>
-
-
-    <div>
-    <p>Prompt engineering is the art of crafting effective prompts to extract the desired output from AI language models like JarkGPT. By understanding the intricacies of AI behavior and using best practices, you can unlock the full potential of JarkGPT for various use cases, such as generating code, writing marketing copies, composing emails, and more.</p>
-    <p>When defining a prompt for JarkGPT, it is essential to use clear, straightforward language. Confusing and unusual word choices may throw off JarkGPT in its processing. In terms of improved results for existing generative AI tools, prompt engineering can help users identify ways to reframe their query to home in on the desired results. For example, a writer may experiment with different ways of framing the same question to tease out how to format text in a particular style and within various constraints. For example, in tools like OpenAI's JarkGPT, variations in word order and the one-time versus multiple use of a single modifier (e.g., very versus very, very, very ) can significantly affect the final text.</p>
+    <div class="text-area-content">
+        <p>Prompt engineering is the art of crafting effective prompts to extract the desired output from AI language
+            models like JarkGPT. By understanding the intricacies of AI behavior and using best practices, you can
+            unlock the full potential of JarkGPT for various use cases, such as generating code, writing marketing
+            copies, composing emails, and more.</p>
+        <p>When defining a prompt for JarkGPT, it is essential to use clear, straightforward language. Confusing and
+            unusual word choices may throw off JarkGPT in its processing. In terms of improved results for existing
+            generative AI tools, prompt engineering can help users identify ways to reframe their query to home in on
+            the desired results. For example, a writer may experiment with different ways of framing the same question
+            to tease out how to format text in a particular style and within various constraints. For example, in tools
+            like OpenAI's JarkGPT, variations in word order and the one-time versus multiple use of a single modifier
+            (e.g., very versus very, very, very ) can significantly affect the final text.</p>
     </div>
 
-<h2><strong>JarkGPT Tone, Format, Audience</strong></h2>
-<div>
-Defining a clear purpose for a prompt can assist in getting useful results. Think about:
 
-<p><strong>Tone:</strong> How do you want the output to sound? Funny? Professional?</p>
-<p><strong>Format:</strong> How do you want the output structured? Bullet list? Paragraph? An essay?</p>
-<p><strong>Audience:</strong> Who is this for? Do you want something for children? Beginners? Experts?</p>
-</div>
+    <div class="informative-list">
+        <h2><strong>JarkGPT Tone, Format, Audience</strong></h2>
 
-<div></div>
+        <p>A clear purpose for a prompt can assist in getting useful results. Think about:</p>
 
+        <li><strong>Tone:</strong> How do you want the output to sound? Funny? Professional?</li>
+        <li><strong>Format:</strong> How do you want the output structured? Bullet list? Paragraph? An essay?</li>
+        <li><strong>Audience:</strong> Who is this for? Do you want something for children? Beginners? Experts?</li><br>
 
-<div>
-    <strong>Instead of:</strong>
-   </div>
-   <p> My team is interested in X, tell me about </p>
-   <div>
-    <strong>Consider:</strong>
-   <p>Provide a summary of X, including its history, features, and configuration.</p>
-</div>
+        <h3><strong>Instead of:</strong></h3>
 
-   Let's take a look at the sample image below. The question provides context, background, and precise infromation needed so that JarkGPT can provide a more thorough result. 
+        <p>My team is interested in X, tell me about</p>
 
-<div>
-<img id="prmptimg" src="https://global-uploads.webflow.com/5e0ac69bad6badc677c5db21/63ec2d4f87e69f5866f78de7_MnDRV3-ZkWo0qbWW0c1yQmaZcIPY3R40R9D1XIPFn4gBuM6PhHCkMuDWkYE3OcamXhqiwemDye5Kq58-OyTRlyCcgL93F7pDJ2iA4l9Vu-BKfB1BQSIKMgpOVW6haMZAvm-SADQlniKl4B-PmvEu_cI.png">
-</div>
+        <strong>Consider:</strong>
+        <p>Provide a summary of X, including its history, features, and configuration.</p>
+    </div>
 
+    <div class="example-image">
+        <h5>Let's take a look at the sample image below. The question provides context, background, and precise
+            infromation
+            needed so that JarkGPT can provide a more thorough result.</h5><br>
+
+        <button type="button" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="https://global-uploads.webflow.com/5e0ac69bad6badc677c5db21/63ec2d4f87e69f5866f78de7_MnDRV3-ZkWo0qbWW0c1yQmaZcIPY3R40R9D1XIPFn4gBuM6PhHCkMuDWkYE3OcamXhqiwemDye5Kq58-OyTRlyCcgL93F7pDJ2iA4l9Vu-BKfB1BQSIKMgpOVW6haMZAvm-SADQlniKl4B-PmvEu_cI.png"
+                width="400px">
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Example</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-dialog modal-fullscreen" id="image-modal">
+                        <img
+                            src="https://global-uploads.webflow.com/5e0ac69bad6badc677c5db21/63ec2d4f87e69f5866f78de7_MnDRV3-ZkWo0qbWW0c1yQmaZcIPY3R40R9D1XIPFn4gBuM6PhHCkMuDWkYE3OcamXhqiwemDye5Kq58-OyTRlyCcgL93F7pDJ2iA4l9Vu-BKfB1BQSIKMgpOVW6haMZAvm-SADQlniKl4B-PmvEu_cI.png">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light btn-lg" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
 
 </body>
+
 </html>

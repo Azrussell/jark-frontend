@@ -51,6 +51,7 @@ nav {
 
 .btn-login {
     display:flex;
+    
 
 }
 
@@ -120,4 +121,37 @@ footer {
     padding-bottom: 3rem;
     font-size: 20px;
 }
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+.quiz-area-content {
+    margin-left: 5rem;
+    margin-right: 5rem; 
+    padding: 3rem;
+    text-align: justify;
+}
+
+.questions {
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-left: 7rem;
+    padding-right: 8rem;
+    font-size: 25px;
+}
+
+.text-answer {
+    font-size: 20px;
+    padding-left: 7rem;
+    padding-right: 8rem;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
 
