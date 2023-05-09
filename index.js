@@ -1,3 +1,4 @@
+
 function displayData() {
     // Make a fetch call to the data API
     fetch('https://jarj-backend.onrender.com/questions')
@@ -63,3 +64,4 @@ function displayData() {
   answerButton.addEventListener('click', displayAnswer);
   
   
+
